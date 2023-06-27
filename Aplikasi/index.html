@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aplikasi Keuangan</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Aplikasi Keuangan</h1>
+    <form id="form">
+      <input type="text" id="description" placeholder="Deskripsi" required>
+      <input type="number" id="amount" placeholder="Jumlah" required>
+      <button type="submit">Tambah</button>
+    </form>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Deskripsi</th>
+          <th>Jumlah</th>
+        </tr>
+      </thead>
+      <tbody id="transactions">
+      </tbody>
+    </table>
+    <p id="balance">Saldo: <span id="balance-amount"></span></p>
+    <a href="logout.php">Logout</a>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
